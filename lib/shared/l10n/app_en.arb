@@ -1,0 +1,18 @@
+{
+  "language": "English",
+  "@language": {
+    "description": "Describe a language"
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Home appbar title"
+  },
+  "signup": "Signup",
+  "@signup": {
+    "signup": "Signup appbar title"
+  },
+  "login": "Login",
+  "@login": {
+    "signup": "Login appbar title"
+  }
+}
