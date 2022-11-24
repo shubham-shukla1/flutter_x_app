@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">Flutter X App (Dev)</string>
+
+    <!-- Clever tap -->
+    <string name="clever_tap_account_id">write account id here</string>
+    <string name="clever_tap_token">write token here/string>
+    <string name="dynamic_host">host.page.link</string>
+
+
+    <!-- domain -->
+    <string name="sip_host">host.alternate</string>
+
+    <!--Truecaller partner key -->
+    <string name="true_caller_partner_key">536783876755fhgghfyf66</string>
+</resources>
