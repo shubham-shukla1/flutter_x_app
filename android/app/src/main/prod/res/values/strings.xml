@@ -8,7 +8,7 @@
     <string name="dynamic_host">host.page.link</string>
 
     <!-- S domain -->
-    <string name="sip_host">host.alternate</string>
+    <string name="host">host.alternate</string>
 
     <!--Truecaller partner key -->
     <!-- for testing -->
