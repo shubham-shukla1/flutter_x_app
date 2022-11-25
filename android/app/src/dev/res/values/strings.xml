@@ -9,7 +9,7 @@
 
 
     <!-- domain -->
-    <string name="sip_host">host.alternate</string>
+    <string name="_host">host.alternate</string>
 
     <!--Truecaller partner key -->
     <string name="true_caller_partner_key">536783876755fhgghfyf66</string>
