@@ -1,12 +1,14 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:clevertap_plugin/clevertap_plugin.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_x_app/shared/app_logging/app_log_helper.dart';
 import 'package:flutter_x_app/presentation/app_webview/app_webview_cubit.dart';
+import 'firebase_options.dart';
 import 'shared/app_logging/app_bloc_observer.dart';
 import 'shared/flavor/app_flutter_config.dart';
 import 'package:flutter_x_app/presentation/general/general_cubit.dart';
@@ -29,6 +31,14 @@ Future<void> main() async {
       ///runZonedGuarded. Error handling wouldn’t work if WidgetsFlutterBinding.
       ///ensureInitialized() was called from the outside.
       WidgetsFlutterBinding.ensureInitialized();
+      try {
+        await Firebase.initializeApp(
+          name: 'x-app',
+          options: DefaultFirebaseOptions.currentPlatform,
+        );
+      } catch (e) {
+        AppLog.log('Error while initializing firebase: $e');
+      }
 
       return runApp(
         MultiBlocProvider(
